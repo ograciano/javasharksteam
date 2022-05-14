@@ -6,12 +6,12 @@ class Server {
         this.app = express();
         this.port = process.env.PORT || 8080;
         this.path = { denuncia: '/api/v1/denuncias'};
-        this.routes()
         this.middlewares()
+        this.routes()
     }
 
     routes(){
-        // this.app.use(this.path.denuncia, require('../routes/denuncia'))
+        this.app.use(this.path.denuncia, require('../routes/denuncias'))
     }
 
     middlewares(){
