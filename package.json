@@ -1,0 +1,19 @@
+{
+  "name": "javasharksteam",
+  "version": "1.0.0",
+  "description": "aplicacion de informacion y denuncia de nuestras playas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ograciano/javasharksteam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ograciano/javasharksteam/issues"
+  },
+  "homepage": "https://github.com/ograciano/javasharksteam#readme"
+}
