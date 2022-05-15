@@ -1,4 +1,5 @@
-
+const path = require('path');
+const fs = require('fs');
 const { request, response } = require("express");
 const subirArchivo = require("../helpers/subir-archivo");
 
@@ -24,7 +25,13 @@ const cargarArchivo = async (req = request, res = response) => {
 }
 
 const actualizarImagen = async (req=request, res=response) => {
+    if (!req.files || Object.keys(req.files).length === 0 || !req.files.archivo) {
+        res.status(400).json({ message: 'No hay archivos que subir' });
+
+    }
+
     const {tabla, id} = req.params;
+    let modelo;
     
     switch (tabla) {
         case 'denuncias':
@@ -38,6 +45,13 @@ const actualizarImagen = async (req=request, res=response) => {
             res.status(500).json({message: 'Error en la coleccion valida que exista'});
     }
 
+    if(modelo.img) {
+        const pathImagen = path.join(__dirname, '../uploads', tabla, modelo.img);
+        if(fs.existsSync(pathImagen)) {
+            fs.unlinkSync(pathImagen);
+        }
+    }
+
     const nombre = await subirArchivo(req.files, undefined, tabla);
     modelo.img = nombre;
     await modelo.save();
@@ -45,7 +59,34 @@ const actualizarImagen = async (req=request, res=response) => {
     res.json(modelo)
 }
 
+const mostrarImagen = async (req=request, res=response) => {
+    const {tabla, id} = req.params;
+    let modelo;
+    
+    switch (tabla) {
+        case 'denuncias':
+              modelo = await Denuncias.findByPk(id);
+              if(!modelo) {
+                  return res.status(400).json({message: `No esiste denuncia con el id: ${id}`});
+              }
+        break;
+    
+        default:
+            res.status(500).json({message: 'Error en la coleccion valida que exista'});
+    }
+
+    if(modelo.img) {
+        const pathImagen = path.join(__dirname, '../uploads', tabla, modelo.img);
+        if(fs.existsSync(pathImagen)) {
+            return res.sendFile(pathImagen);
+        }
+    }
+    const pathImagen = path.join(__dirname, '../assets/no-image.jpg');
+    res.sendFile(pathImagen);
+}
+
 module.exports = {
     cargarArchivo,
-    actualizarImagen
+    actualizarImagen,
+    mostrarImagen
 }
