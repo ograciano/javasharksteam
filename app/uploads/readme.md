@@ -1,0 +1,1 @@
+Carpeta para subida de imagenes
