@@ -29,6 +29,13 @@ h1, h2 {
     
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #f2f4f7;
+    padding: 0 2rem;;
+}
 
 .container {
     width: 10   0%;
