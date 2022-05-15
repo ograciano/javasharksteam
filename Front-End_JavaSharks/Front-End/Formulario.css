@@ -110,7 +110,7 @@ body{
 }
 
 .form{
-    background-color: #fff;
+    background-color: rgb(254, 254, 254);
     margin: auto;
     width: 80%;
     max-width: 400px;

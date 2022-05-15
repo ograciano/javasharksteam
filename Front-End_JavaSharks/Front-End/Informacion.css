@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+#logo{
+    float:left; 
+    font-size:24px; 
+    text-transform:uppercase; 
+    color:#000000; 
+    font-weight:600; 
+    padding:20px 0px;
+    
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+.contenedor-up{
+    width: 100%;
+    
+}
+.contenedor-up .grupo-up-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    padding: 80px 0px;
+}
+
+.contenedor-up .grupo-up-1 .box-up h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.contenedor-up .grupo-1 .box-up .box-formulario{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 80px 0px;
+}
+.contenedor-up .grupo-up-1 .box-up p{
+    border-spacing: 100px 167px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contenedor-up .grupo-up-1 .box-up figure img{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+
+.menu{
+    width: 100%;
+    background: #2f2f2f;
+    text-align: center;
+    position: fixed;
+}
+
+.menu{
+    opacity: 90%;
+}
+
+.menu a{
+    text-align: left;
+    display: inline-block;
+    transition: all .3s ease;
+}
+
+.menu a:hover{
+    transform: scale(1.2);
+    background-color: dodgerblue;
+}
+
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 20px;
+    transition: all .3s ease;
+}
+.menu ul li:hover{
+    transform: scale(1.2);
+    background-color: dodgerblue;
+
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body{
+    background-image: url("Imagenes/pexels-jeremy-bishop-2422915.jpg");
+    font-family: 'Roboto', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.form{
+    background-color: rgb(254, 254, 254);
+    margin: auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_paragraph{
+    font-weight: 300;
+}
+
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_input:not(placeholder-shown){
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    background: #3866f2;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+.form_input:focus ~ .form_line,
+.form_input:not(placeholder-shown) ~ .form_line{
+    transform: scale(1);
+}
+
+.pie-pagina{
+    width: 100%;
+    height: 260px;
+    background-color: #bbbbbb;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+    padding: 60px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    width: 100%;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.pie-pagina .grupo-1 .box h3{
+    border-spacing: 100px 167px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 15;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media (max-width: 425px){
+    .form_title{
+        font-size: 1.8rem;
+    }
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?4yl6k0');
+    src:  url('fonts/icomoon.eot?4yl6k0#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?4yl6k0') format('truetype'),
+      url('fonts/icomoon.woff?4yl6k0') format('woff'),
+      url('fonts/icomoon.svg?4yl6k0#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .social-bar{
+    position: fixed;
+    right: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    top: 35%;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    transition: all.5s;
+
+}
+.icon-facebook2{
+    background-color: blue;
+    border-radius: 1rem 0 0 0;
+
+}
+.icon-twitter{
+    background-color: lightblue;
+
+}
+.icon-instagram{
+    background-color: crimson;
+    border-radius: 0 0 0 1rem;
+}

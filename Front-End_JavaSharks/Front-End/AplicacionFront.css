@@ -165,7 +165,7 @@ body{
 }
 .pie-pagina .grupo-1 .box h3{
     border-spacing: 100px 167px;
-    color: #000000;
+    color: rgb(18, 16, 16);
     margin-bottom: 10px;
     font-size: 15;
 }
@@ -186,4 +186,30 @@ body{
         grid-gap:30px;
         padding: 35px 0px;
     }
+}
+
+.form{
+    /*background-color: rgb(43, 128, 136);*/
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+   /* border-radius: 10px;*/
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_paragraph{
+    margin-bottom: .5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgb(255, 254, 254);
+    text-align: justify;
+    text-decoration: solid;
 }
