@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("Imagenes/pexels-jeremy-bishop-2422915.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+.menu{
+    width: 100%;
+    background: #2f2f2f;
+    text-align: center;
+    position: fixed;
+    
+
+}
+
+.menu{
+    opacity: 90%;
+
+}
+.menu a{
+    text-align: left;
+    display: inline-block;
+    transition: all .3s ease;
+    
+
+}
+.menu a:hover{
+    transform: scale(1.2);
+    background-color: dodgerblue;
+
+}
+.menu ul{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding: 20px;
+    transition: all .3s ease;
+}
+.menu ul li:hover{
+    transform: scale(1.2);
+    background-color: dodgerblue;
+
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+
+
+#logo{
+    float:left; 
+    font-size:24px; 
+    text-transform:uppercase; 
+    color:#000000; 
+    font-weight:600; 
+    padding:20px 0px;
+    
+}
+.contenedor-up{
+    width: 100%;
+    
+}
+.contenedor-up .grupo-up-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    padding: 80px 0px;
+}
+
+.contenedor-up .grupo-up-1 .box-up h2{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.contenedor-up .grupo-1 .box-up .box-formulario{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 80px 0px;
+}
+.contenedor-up .grupo-up-1 .box-up p{
+    border-spacing: 100px 167px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contenedor-up .grupo-up-1 .box-up figure img{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+
+
+
+.social-bar{
+    position: fixed;
+    right: 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    top: 35%;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    transition: all.5s;
+
+}
+.icon-facebook2{
+    background-color: blue;
+    border-radius: 1rem 0 0 0;
+
+}
+.icon-twitter{
+    background-color: lightblue;
+
+}
+.icon-instagram{
+    background-color: crimson;
+    border-radius: 0 0 0 1rem;
+}
+.pie-pagina{
+    width: 100%;
+    height: 260px;
+    background-color: #bbbbbb;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+    padding: 60px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    width: 100%;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.pie-pagina .grupo-1 .box h3{
+    border-spacing: 100px 167px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 15;
+}
+
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
