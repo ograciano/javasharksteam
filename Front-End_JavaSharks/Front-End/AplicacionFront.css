@@ -17,26 +17,23 @@ body{
     background: #2f2f2f;
     text-align: center;
     position: fixed;
-    
-
 }
 
 .menu{
     opacity: 90%;
-
 }
+
 .menu a{
     text-align: left;
     display: inline-block;
     transition: all .3s ease;
-    
-
 }
+
 .menu a:hover{
     transform: scale(1.2);
     background-color: dodgerblue;
-
 }
+
 .menu ul{
     list-style: none;
 }
