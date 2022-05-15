@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("img/pexels-jeremy-bishop-2422915.jpg");
+    background-image: url("../img/pexels-jeremy-bishop-2422915.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -93,7 +93,7 @@ a:visited {
 }
 
 form{
-	width:400px;
+	width:800px;
 	padding:50px;
 	border-radius:10px;
 	margin:auto;

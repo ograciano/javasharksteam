@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./denuncia.css">
+    <link rel="stylesheet" href="./css/denuncia.css">
     <title>Java Shark</title>
 </head>
 
@@ -31,9 +31,8 @@
     
 <form action="#" target="" method="get" name="formDatosPersonales">
     
-
+    <p>
 	<label for="Formulario">Formulario</label>
-	<input type="text" name="nombre" id="nombre" />
     <p>
     </p>
 
@@ -52,8 +51,8 @@
     <p>
     </p>
 
-	<label for="asunto">Ciudad</label>
-	<input type ="text" name="asunto" id="asunto" placeholder="Ciudad"/>
+	<label for="asunto">Direccion</label>
+	<input type ="text" name="asunto" id="asunto" placeholder="Escribe tu direccion completa"/>
     <p>
     </p>
 
@@ -61,6 +60,8 @@
 	<textarea name="mensaje" for="mensaje" placeholder="Escribe brevemente tu inconformidad (Maximo 300 carácteres)" maxlength="300"></textarea>
 	<p>
     </p>
+    <input type="hidden" name="MAX_FILE_SIZE" value="4194304" /> <!--Esto significa que los archivos de más de 4194304 bytes (4MB) no se podrán subir.-->
+    <input type="file" /> 
     <p>
     </p>
 	<input type="submit" name="enviar" value="enviar datos"/>
