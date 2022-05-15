@@ -1,25 +1,65 @@
 const { request, response } = require("express");
+const Denuncias = require("../models/denuncia");
 
 
-const getAllDenuncias = (req = request, res = response) => {
-    res.json({message: 'get todas las Denuncias listo '})
+const getAllDenuncias = async (req = request, res = response) => {
+    try {
+        const denuncias = await Denuncias.findAll();
+        res.json({denuncias})
+        
+    } catch (error) {
+        console.log(error);
+        res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
+    }
 }
-const getDenuncia = (req = request, res = response) => {
-    const {id} = req.params;
-    res.json({id, message: 'get una Denuncia listo '})
+const getDenuncia = async (req = request, res = response) => {
+    try {
+        const {id} = req.params;
+        const denuncia = await Denuncias.findByPk(id);
+        res.json(denuncia)
+        
+    } catch (error) {
+        console.log(error);
+        res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
+    }
 }
-const postDenuncia = (req = request, res = response) => {
-    const body = req.body;
-    res.json({body, message: 'post Denuncia listo '})
+const postDenuncia = async (req = request, res = response) => {
+    try {
+        await Denuncias.sync();
+        const body = req.body;
+        const denuncia = Denuncias.build(body);
+        await denuncia.save();
+        res.json({message: 'Denuncia creada con exito'});
+    } catch (error) {
+        console.log(error);
+        res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
+    }
 }
-const putDenuncia = (req = request, res = response) => {
-    const {id} = req.params;
-    const body = req.body;
-    res.json({id, body, message: 'put Denuncia listo '})
+const putDenuncia = async (req = request, res = response) => {
+    try {
+        const {id} = req.params;
+        const body = req.body;
+        const denuncia = Denuncias.findByPk(id);
+        await (await denuncia).update(body);
+        res.json({message: 'Denuncia actualizada exitosamente'})
+    } catch (error) {
+        console.log(error);
+        res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
+    }
 }
-const deleteDenuncia = (req = request, res = response) => {
-    const {id} = req.params;
-    res.json({id, message: 'delete Denuncia listo '})
+const deleteDenuncia = async (req = request, res = response) => {
+    try {
+        const {id} = req.params;
+        const denuncia = Denuncias.findByPk(id);
+        if (!denuncia) {
+            return res.json({msg: 'No existe una denuncia con el id: ' + id});
+        }
+        (await denuncia).destroy();
+        res.json({message: 'Resgistro borrado de la base de datos'})
+    } catch (error) {
+        console.log(error);
+        res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
+    }
 }
 
 module.exports = {
