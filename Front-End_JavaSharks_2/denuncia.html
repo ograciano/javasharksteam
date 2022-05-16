@@ -30,7 +30,7 @@
         
     </header>
     
-<form action="#" target="" method="get" name="formDatosPersonales">
+<form name="formDatosPersonales">
     
     <p>
 	<label for="Formulario">Formulario</label>
@@ -43,7 +43,7 @@
     </p>
 
 	<label for="apellidos">Apellidos</label>
-	<input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"/>
+	<input type="text" name="apellido" id="apellido" placeholder="Apellidos"/>
     <p>
     </p>
 
@@ -65,7 +65,7 @@
     <input type="file" /> 
     <p>
     </p>
-	<input type="submit" name="enviar" value="enviar datos"/>
+	<input type="submit" name="enviar" onclick="subirDatos()" value="enviar datos"/>
 </form>
 
 <div class="brandMenu" id="menu-icon">
@@ -73,4 +73,5 @@
 </div>
 
 </body>
+<script src="js/app.js"></script>
 </html>

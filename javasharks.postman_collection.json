@@ -58,7 +58,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nombre\": \"Oscar Omar Graciano\",\n    \"correo\": \"launchx00588@innovaccion.mx\",\n    \"motivo\": \"Desechos en la playa\",\n    \"descripcion\": \"Toda la playa se encuentra en pesimo estado ensuciada con latas y boslas de plastico\"\n}",
+							"raw": "{\n    \"nombre\": \"Oscar Omar Graciano\",\n    \"correo\": \"launchx00588@innovaccion.mx\",\n    \"motivo\": \"Desechos en la playa\",\n    \"direccion\": \"Calle Azure colonia domingo arrieta\",\n    \"descripcion\": \"Toda la playa se encuentra en pesimo estado ensuciada con latas y boslas de plastico\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -122,6 +122,84 @@
 								"1"
 							]
 						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Uploads",
+			"item": [
+				{
+					"name": "Subir imagen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "archivo",
+									"type": "file",
+									"src": "/home/ograciano/Descargas/WhatsApp Image 2022-05-12 at 2.49.48 PM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/uploads",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"uploads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Imagen de tabla",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "archivo",
+									"type": "file",
+									"src": "/home/ograciano/Descargas/WhatsApp Image 2022-05-12 at 2.49.48 PM.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/uploads/denuncias/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"uploads",
+								"denuncias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Imagen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
 					},
 					"response": []
 				}

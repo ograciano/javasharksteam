@@ -31,7 +31,7 @@
             </section>
         </header>
         
-        <form class="form">
+        <form id="form" class="form">
             <h2 class="form_title"> Denuncia </h2>
             
             <div class="form_container">
@@ -42,16 +42,16 @@
                 </div>
         
                 <div class="form_group">
-                    <input type="email" id="correo1" class="form_input" placeholder=" ">
-                    <label for="correo1" class="form_label">Correo Electronico</label>
+                    <input type="email" id="correo" class="form_input" placeholder=" ">
+                    <label for="correo" class="form_label">Correo Electronico</label>
                     <span class="form_line"></span>
                 </div>
 
-                <div class="form_group">
+                <!-- <div class="form_group">
                     <input type="tel" id="tel1" class="form_input" maxlength="10" placeholder=" ">
                     <label for="tel1" class="form_label">Teléfono</label>
                     <span class="form_line"></span>
-                </div>
+                </div> -->
 
                 <div class="form_group">
                     <input type="text" id="direc" class="form_input" placeholder="">
@@ -66,8 +66,8 @@
                 </div>
                             
                 <div class="form_group">
-                    <input type="datetime-local" id="fecha" class="form_input" placeholder=" ">
-                    <label for="fecha" class="form_label">Fecha y hora aproximada</label>
+                    <input type="text" id="desc" class="form_input" placeholder=" ">
+                    <label for="desc" class="form_label">Descripcion de los hechos</label>
                     <span class="form_line"></span>
                 </div>
 
@@ -77,7 +77,7 @@
                     <span class="form_line"></span>
                 </div>
             
-                <input type="submit" class="form_submit" value="Enviar">
+                <button id="btnSubmit" class="form_submit">Enviar</button>
             </div>
         </form>
         <div class="social-bar">
@@ -121,4 +121,5 @@
 
        
     </body>
+    <script src="js/app.js"></script>
 </html>
