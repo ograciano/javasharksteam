@@ -3,6 +3,9 @@
 # javasharksteam
 Aplicacion de informacion y denuncia de nuestras playas.
 
+Link de Aplicacion desplegada
+https://appwebjavasharks.z21.web.core.windows.net/
+
 Como equipo después analizar las problemáticas existentes en los océanos, nos dimos cuenta que debido al tiempo que fue otorgado para la realización de este proyecto, las problemáticas más viables a atacar mediante la implantación de una solución tecnológica a nuestro alcance resultan ser los eventos naturales como la presencia de Sargazo y los delitos que se cometen por parte del ser humano en contra del ecosistema marino, ya que podemos desplegar un sitio web en el que puedan ser denunciados y canalizar estas denuncias a las autoridades correspondientes o proporcionar asesoría de a quien se deben hacer estas denuncias, pero el mayor impacto será el documentar estas situaciones y hacerlas del dominio público por medio de este sitio. 
 
 ##Solucion propuesta.
