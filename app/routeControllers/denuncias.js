@@ -29,7 +29,7 @@ const postDenuncia = async (req = request, res = response) => {
         const body = req.body;
         const denuncia = Denuncias.build(body);
         await denuncia.save();
-        res.json({message: 'Denuncia creada con exito'});
+        res.json({message: 'Denuncia creada con exito', id: denuncia.id});
     } catch (error) {
         console.log(error);
         res.json({message: 'Error en el servidor Verifica con tu admiistrador'});
