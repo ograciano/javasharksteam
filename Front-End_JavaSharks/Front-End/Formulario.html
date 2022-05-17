@@ -1,125 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario</title>
-        <link rel="stylesheet" href="Formulario.css">
-    </head>
-    <body>
-        <header>
-            <section>
-                <nav class="menu">
-                    <div class="contenedor">
-    
-                    
-                        <ul>
-                            <a href="https://github.com/ograciano/javasharksteam.git" id="logo" target="_blank">Created by Java Shark Team</a>
-                            
-                            <li><a href="AplicacionFront.html"><i class="#logo"></i>Inicio</a></li>
-    
-                    
-                            <li><a href="Informacion.html"><i class="icon-thumbs-up-alt"></i>Información</a></li>
-    
-                    
-                            <li><a href="Formulario.html"><i class="icon-picture"></i>Denuncias</a></li>
-                        
-                        </ul>
-                    </div>
-                </nav>
-            </section>
-        </header>
-        
-        <form id="form" class="form">
-            <h2 class="form_title"> Denuncia </h2>
-            
-            <div class="form_container">
-                <div class="form_group">
-                    <input type="text" id="name" class="form_input" placeholder=" ">
-                    <label for="name" class="form_label">Nombre</label>
-                    <span class="form_line"></span>
-                </div>
-        
-                <div class="form_group">
-                    <input type="email" id="correo" class="form_input" placeholder=" ">
-                    <label for="correo" class="form_label">Correo Electronico</label>
-                    <span class="form_line"></span>
-                </div>
 
-                <!-- <div class="form_group">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+
+<body>
+    <header>
+        <section>
+            <nav class="menu">
+                <div class="contenedor">
+
+
+                    <ul>
+                        <a href="https://github.com/ograciano/javasharksteam.git" id="logo" target="_blank">Created by
+                            Java Shark Team</a>
+
+                        <li><a href="AplicacionFront.html"><i class="#logo"></i>Inicio</a></li>
+
+
+                        <li><a href="Informacion.html"><i class="icon-thumbs-up-alt"></i>Información</a></li>
+
+
+                        <li><a href="Formulario.html"><i class="icon-picture"></i>Denuncias</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <form id="form" class="form">
+        <h2 class="form_title"> Denuncia </h2>
+
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="email" id="correo" class="form_input" placeholder=" ">
+                <label for="correo" class="form_label">Correo Electronico</label>
+                <span class="form_line"></span>
+            </div>
+
+            <!-- <div class="form_group">
                     <input type="tel" id="tel1" class="form_input" maxlength="10" placeholder=" ">
                     <label for="tel1" class="form_label">Teléfono</label>
                     <span class="form_line"></span>
                 </div> -->
 
-                <div class="form_group">
-                    <input type="text" id="direc" class="form_input" placeholder="">
-                    <label for="direc" class="form_label">Dirección</label>
-                    <span class="form_line"></span>
-                </div>
-        
-                <div class="form_group">
-                    <input type="text" id="motivo" class="form_input" placeholder="">
-                    <label for="motivo" class="form_label">Motivo de la denuncia</label>
-                    <span class="form_line"></span>
-                </div>
-                            
-                <div class="form_group">
-                    <input type="text" id="desc" class="form_input" placeholder=" ">
-                    <label for="desc" class="form_label">Descripcion de los hechos</label>
-                    <span class="form_line"></span>
-                </div>
-
-                <div class="form_group">
-                    <input type="file" id="archivo" name="archivo" multiple>
-                    <label for="archivo"></label>
-                    <span class="form_line"></span>
-                </div>
-            
-                <button id="btnSubmit" class="form_submit">Enviar</button>
+            <div class="form_group">
+                <input type="text" id="direc" class="form_input" placeholder="">
+                <label for="direc" class="form_label">Dirección</label>
+                <span class="form_line"></span>
             </div>
-        </form>
-        <div class="social-bar">
-        
-            <a href="https://www.facebook.com/" target="_blank"class="icon icon-facebook2"></a>
-            
-            <a href="https://twitter.com/i/flow/login" target="_blank" class="icon icon-twitter"></a>
-            
-            <a href="https://www.instagram.com/" target="_blank" class="icon icon-instagram"></a>
-    
+
+            <div class="form_group">
+                <input type="text" id="motivo" class="form_input" placeholder="">
+                <label for="motivo" class="form_label">Motivo de la denuncia</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="desc" class="form_input" placeholder=" ">
+                <label for="desc" class="form_label">Descripcion de los hechos</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="file" id="archivo" name="archivo" multiple>
+                <label for="archivo"></label>
+                <span class="form_line"></span>
+            </div>
+
+            <button id="btnSubmit" class="form_submit">Enviar</button>
         </div>
+    </form>
+    <div class="social-bar">
 
-        <footer class="pie-pagina">
-            <div class="grupo-1">
-                <div class="box">
-                    <h3>Jonathan González</h3>
-                    <h3>launchx00563@innovaccion.mx</h3>
-                </div>
-                
-                <div class="box">
-                    <h3>Oscar Graciano</h3>
-                    <h3>launchx00588@innovaccion.mx</h3> 
-                </div>
-                <div class="box">
-                    <h3>Julian Castillo</h3>
-                    <h3>launchx02212@innovaccion.mx</h3>
-                </div>
-                <div class="box">
-                    <h3>Rene Hamard</h3>
-                    <h3>launchx02368@innovaccion.mx</h3>
-                </div>
-                <div class="box">
-                    <h3>Yarabi de la Cruz</h3>
-                    <h3>launchx00644@innovaccion.mx</h3>
-                </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy; 2021 <b></b> - Todos los Derechos Reservados.</small>
-            </div>
-        </footer>
+        <a href="https://www.facebook.com/" target="_blank" class="icon icon-facebook2"></a>
 
-       
-    </body>
-    <script src="js/app.js"></script>
+        <a href="https://twitter.com/i/flow/login" target="_blank" class="icon icon-twitter"></a>
+
+        <a href="https://www.instagram.com/" target="_blank" class="icon icon-instagram"></a>
+
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h3>Jonathan González</h3>
+                <h3>launchx00563@innovaccion.mx</h3>
+            </div>
+
+            <div class="box">
+                <h3>Oscar Graciano</h3>
+                <h3>launchx00588@innovaccion.mx</h3>
+            </div>
+            <div class="box">
+                <h3>Julian Castillo</h3>
+                <h3>launchx02212@innovaccion.mx</h3>
+            </div>
+            <div class="box">
+                <h3>Rene Hamard</h3>
+                <h3>launchx02368@innovaccion.mx</h3>
+            </div>
+            <div class="box">
+                <h3>Yarabi de la Cruz</h3>
+                <h3>launchx00644@innovaccion.mx</h3>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2021 <b></b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+
+</body>
+<script>
+    const prod = 'https://javasharkteam.azurewebsites.net';
+    const dev = 'http://localhost:8080';
+    const btnSubmit = document.getElementById('btnSubmit');
+
+    btnSubmit.addEventListener('click', async (e) => {
+        e.preventDefault();
+        const nombre = document.getElementById('name').value;
+        const correo = document.getElementById('correo').value;
+        const direc = document.getElementById('direc').value;
+        const desc = document.getElementById('desc').value;
+        const motivo = document.getElementById('motivo').value;
+        const archivo = document.getElementById('archivo').files[0];
+
+        const dataPost = {
+            nombre,
+            correo,
+            motivo,
+            direccion: direc,
+            descripcion: desc,
+        }
+
+        const response = await fetch(`${prod}/api/v1/denuncias`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(dataPost)
+        });
+        const denuncia = await response.json();
+        alert(denuncia.message);
+
+        if (archivo) {
+            console.log(archivo);
+            let formData = new FormData();
+            formData.append('archivo', archivo);
+            const id = denuncia.id;
+            const response = await fetch(`${prod}/api/v1/uploads/denuncias/${id}`, {
+                method: 'PUT',
+                headers: {
+                    // 'Content-Type': 'multipart/form-data'
+                },
+                body: formData
+            });
+            const denunciaActualizada = await response.json();
+            console.log(response);
+            console.log(denunciaActualizada);
+        }
+    });
+</script>
+
 </html>
