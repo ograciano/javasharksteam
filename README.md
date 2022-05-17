@@ -28,4 +28,4 @@ De igual manera se puede contar con otra sección y su respectivo formulario par
 
 ## Lenguajes y tecnologias usadas
 
-HTML, CSS, JavaScript, Bootstrap, Vue.js, Sanity, Back-End, Tailwind CSS y TypeScript
+HTML, CSS, JavaScript, Bootstrap, Vue.js, Back-End, Tailwind CSS, TypeScript, SQL Server y Webapps (Azure)
